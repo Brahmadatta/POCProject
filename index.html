@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tab POC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Tab POC Feature</h2>
+
+  <!-- Tab Headers -->
+  <div class="tabs">
+    <div class="tab-header active" onclick="goToTab(0)">Profile</div>
+    <div class="tab-header" onclick="goToTab(1)">Interests</div>
+    <div class="tab-header" onclick="goToTab(2)">Settings</div>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="form-box">
+    <!-- Tab 1: Profile -->
+    <div class="tab active" id="tab-0">
+      <label>Name: <input type="text" id="name" /></label>
+      <label>Email: <input type="email" id="email" /></label>
+      <label>Age: <input type="number" id="age" min="0" /></label>
+    </div>
+
+    <!-- Tab 2: Interests -->
+    <div class="tab" id="tab-1">
+      <label><input type="checkbox" class="interest" value="Coding" /> Coding</label>
+      <label><input type="checkbox" class="interest" value="Music" /> Music</label>
+      <label><input type="checkbox" class="interest" value="JavaScript" /> JavaScript</label>
+    </div>
+
+    <!-- Tab 3: Settings -->
+    <div class="tab" id="tab-2">
+      <label><input type="radio" name="theme" value="Dark" /> Dark</label>
+      <label><input type="radio" name="theme" value="Light" /> Light</label>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="buttons">
+    <button id="prevBtn" onclick="prevTab()">Prev</button>
+    <button id="nextBtn" onclick="nextOrSubmit()">Next</button>
+  </div>
+
+  <script src="tabs.js"></script>
+
+</body>
+</html>

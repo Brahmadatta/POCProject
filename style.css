@@ -1,0 +1,86 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.light-theme {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.dark-theme {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    /* Horizontal Tabs */
+    .tabs {
+      display: flex;
+      max-width: 400px;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 0;
+    }
+
+    .tab-header {
+      flex: 1;
+      text-align: center;
+      padding: 12px 0;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #f0f0f0;
+      transition: background-color 0.3s;
+    }
+
+    .tab-header.active {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+
+    /* Box for form content */
+    .form-box {
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 20px;
+      max-width: 400px;
+      background-color: inherit;
+      color: inherit;
+    }
+
+    .tab {
+      display: none;
+    }
+
+    .tab.active {
+      display: block;
+    }
+
+    .buttons {
+      text-align: right;
+      max-width: 400px;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      background-color: inherit;
+      color: inherit;
+      border: 1px solid #999;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 6px;
+    }
